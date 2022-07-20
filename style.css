@@ -1,0 +1,350 @@
+* {
+    font-family: 'Architects Daughter', cursive;
+    font-family: 'Jost', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+
+
+/*------------------------------------------
+ head start
+-------------------------------------------- */
+#header-sec {
+    background-color: #161616;
+    margin: 20px 5% 50px 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3%;
+    border-radius: 30px;
+
+}
+
+#header-text {
+    color: white;
+    text-align: left;
+    padding: 5%;
+    align-items: center;
+}
+
+#header-text h1 {
+    font-family: 'Poppins';
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 4px;
+
+}
+
+#header-text p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.btn {
+    margin-top: 14px;
+    background-color:
+        #DD0000;
+
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 25px;
+    gap: 10px;
+    font-size: 20px;
+    /* width: 187px;
+    height: 56px; */
+    color: white;
+
+}
+
+/* head ----icon  */
+.right-arrow {
+    font-size: 20px;
+}
+
+/* parent div of image */
+#header-pic {
+    display: flex;
+    justify-content: center;
+}
+
+#header-pic img {
+    width: 100%;
+}
+
+/* -------------------------------------------
+header animation
+---------------------------------------------*/
+.animation {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.football {
+
+    font-size: 50px;
+    /* used fotball from "font-awesome" */
+    position: relative;
+    animation: sliding 3s ease-in-out 0.5s 100 forwards;
+    animation-play-state: running;
+
+}
+
+@keyframes sliding {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    30% {
+        transform: rotate(0deg);
+        top: 40px;
+    }
+
+    35% {
+        transform: rotate(45deg);
+        top: 20px;
+    }
+
+    40% {
+        transform: rotate(90deg);
+        top: 40px;
+    }
+
+    45% {
+        transform: rotate(135deg);
+        top: 30px;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        top: 40px;
+    }
+
+    55% {
+        transform: rotate(225deg);
+        top: 35px;
+    }
+
+    60% {
+        transform: rotate(270deg);
+        top: 40px
+    }
+
+    65% {
+        transform: rotate(315deg);
+    }
+
+    70% {
+        transform: rotate(360deg);
+    }
+
+    80% {
+        transform: rotate(405deg);
+    }
+
+    100% {
+        transform: rotate(430deg);
+        left: 100%;
+        top: 40px;
+    }
+}
+
+
+/*----------------------------------------------
+ header part complete
+----------------------------------------------  */
+/*  */
+/* ----------------------------------------------
+main/aside start
+---------------------------------------------- */
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 9%);
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+.div-btn {
+    background: #FFFFFF;
+    border-radius: 10px;
+    width: 252px;
+    height: 64px;
+    font-weight: 500px;
+
+}
+
+.color-btn {
+    background-color: #DD0000;
+
+}
+
+.color-a {
+    color: white;
+}
+
+#table-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 312px;
+    height: 312px;
+    background: #161616;
+    border-radius: 10px;
+
+}
+
+#btn-div {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+
+
+}
+
+
+/* ----------------------------------------
+main/aside done
+------------------------------------------ */
+
+/* ---------------------------------------
+main/articles start
+---------------------------------------- */
+.blog-img img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+
+#blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+article {
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px gray;
+
+}
+
+.blog-article {
+    padding: 20px;
+}
+
+.icons-blog {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+
+.blog-text {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.blog-icon {
+    font-size: 16px;
+}
+
+.trnsfr {
+    color: #161616;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    padding: 5px 15px;
+    display: inline;
+    /* ("p" is a block-lavel element and i need to chng it,that's why i used it "display:inline") */
+}
+
+/* -------------------------------------------------
+blogs end
+--------------------------------------------------- */
+/* ------------------------------------------------
+main start
+---------------------------------------------------- */
+
+main {
+    width: 90%;
+    margin: 0 5% 130px 5%;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+/* -----------------------------------------------------
+main end 
+------------------------------------------------------ */
+
+/* ----------------------------------------------------
+footer start
+----------------------------------------------------- */
+footer {
+    background-color: #161616;
+}
+
+#stylish-text {
+    padding-top: 130px;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 30px;
+    font-family: 'pacifico';
+}
+
+#footer-hr {
+    width: 90%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+
+}
+
+#footer-menu {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 30px 15% 0px 15%;
+    padding: 0;
+    font-weight: 500;
+}
+
+.footer-icon {
+    font-size: 30px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+#f-icons {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: 30px 30% 0 30%;
+}
+
+/* ------------------------------------------------------
+footer end
+----------------------------------------------------- */
+@media screen {}
