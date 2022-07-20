@@ -224,11 +224,27 @@ main/aside done
 /* ---------------------------------------
 main/articles start
 ---------------------------------------- */
-.blog-img img {
+.blog-img>span>img {
     width: 100%;
-    border-radius: 10px 10px 0 0;
+    border-radius: 0 0;
 }
 
+.blog-img {
+    margin: 50px 30px 0 30px;
+
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 20px; 
+}
+
+.vs {
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    color: #161616;
+    ;
+}
 
 #blogs {
     display: grid;
@@ -242,40 +258,22 @@ article {
 
 }
 
-.blog img {
-    width: 100%;
-}
 
 .blog-article {
     padding: 20px;
 }
 
-.icons-blog {
-    display: flex;
-    justify-content: flex-start;
-    gap: 30px;
-}
-
 .blog-text {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
+    text-align: center;
 }
 
-.blog-icon {
+.blog-time {
+    text-align: center;
     font-size: 16px;
+    font-weight: 400;
 }
-
-.trnsfr {
-    color: #161616;
-    font-weight: 500;
-    font-size: 16px;
-    border: 1px solid #161616;
-    border-radius: 5px;
-    padding: 5px 15px;
-    display: inline;
-    /* ("p" is a block-lavel element and i need to chng it,that's why i used it "display:inline") */
-}
-
 
 
 /* -------------------------------------------------
@@ -492,8 +490,8 @@ footer end
         justify-content: center;
         gap: 20px;
         flex-wrap: wrap;
-    } 
-   
+    }
+
 }
 
 /* tablate divices end */
